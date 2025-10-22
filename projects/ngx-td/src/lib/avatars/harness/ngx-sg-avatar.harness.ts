@@ -10,7 +10,6 @@ import { UnitTestElement } from '@angular/cdk/testing/testbed';
 /**
  * @description Harness for the `NgxSgAvatarComponent`.
  *
- * @link [Documentation](https://karma-solutions-org.github.io/ngx-sg/docs/avatars#the-avatar-harness)
  */
 export class NgxSgAvatarHarness extends ComponentHarness {
   static readonly hostSelector = 'ngx-sg-avatar';
