@@ -1,0 +1,27 @@
+/***** Slide *****/
+.slide {
+    position: relative;
+    opacity: 0;
+    left: -800px;
+    transition: 0.5s;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/***** Slide *****/

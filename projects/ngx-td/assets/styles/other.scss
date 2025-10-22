@@ -1,0 +1,52 @@
+@use "breakpoints";
+
+.pointer {
+  cursor: pointer;
+}
+
+.card-message {
+  font-size: 26px;
+  font-weight: 600;
+  @include breakpoints.media-breakpoint-down('lg') {
+    font-size: 20px !important;
+  }
+}
+
+.d-inline {
+  display: inline;
+}
+
+cdk-virtual-scroll-viewport,
+mat-drawer-content,
+.mat-drawer-inner-container,
+.beautiful-scroll {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 20px rgba(0, 0, 0, 0.24);
+  }
+}
+
+cdk-virtual-scroll-viewport:hover,
+mat-drawer-content:hover,
+.mat-drawer-inner-container:hover,
+.beautiful-scroll:hover {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 20px rgba(0, 0, 0, 0.37);
+  }
+}

@@ -1,0 +1,13 @@
+@if (_avatarModel(); as avatarModel) {
+  <div
+    [style.background-color]="avatarModel.backgroundColor"
+    [style.height.px]="avatarModel.dimension"
+    [style.width.px]="avatarModel.dimension"
+    class="avatar">
+    <span
+      [style.color]="avatarModel.textColor"
+      [style.font-size.px]="avatarModel.fontSize"
+      >{{ avatarModel.initials }}</span
+    >
+  </div>
+}
